@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sähköposti</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gradient-section">
+            <div class="gradient"></div>
+            <div class="gradient-content">
+                <h1 class="heading">Tervetuloa <span>Sähköpostin</span> lähetys ohjelmaan</h1>
+                <p class="paragraph">sähköpsti</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Hei, Ystävä</h2>
+            <p> Tervetuloa sähköpostin lähetykseen</p>
+            <form>
+                <div class="form-group">
+                    <label for="to">Kenelle:</label>
+                    <input type="text" id="to" name="to" required autocomplete="off" placeholder="esimerkki@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Aihe:</label>
+                    <input type="text" id="subject" name="subject" required autocomplete="off"
+                    placeholder="Viestisi aihe">
+                </div>
+                <div class="form-group">
+                    <label for="message">Viesti:</label>
+                    <textarea id="message" name="message" required spellcheck="false" autocomplete="off"
+                        placeholder="Sinun viesti..."></textarea>
+                </div>
+                <div class="form-group result-container">
+                    <p class="result">Sähköposti lähetetty!</p>
+                    <button type="button" class="send-btn">Lähetä</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
